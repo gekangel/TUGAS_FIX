@@ -62,14 +62,14 @@
 % colorbar;
 
 %Plot 3D part2
-[x, y] = meshgrid(-6:0.1:6);
-z = (-y.^2 - x.^2 + 1) ./ (2*x.*y); 
-figure; 
-mesh(x, y, z);
-xlabel('X Axis');
-ylabel('Y Axis'); 
-zlabel('Z Axis'); 
-title('3D'); 
+% [x, y] = meshgrid(-6:0.1:6);
+% z = (-y.^2 - x.^2 + 1) ./ (2*x.*y); 
+% figure; 
+% mesh(x, y, z);
+% xlabel('X Axis');
+% ylabel('Y Axis'); 
+% zlabel('Z Axis'); 
+% title('3D'); 
 
 % % Plot 3D Part 3
 % x = linspace(-5, 5, 100);
@@ -88,12 +88,14 @@ title('3D');
 
 
 % %Plot 3D Part 4
-% t = 0:pi/500:40*pi;
-% xt = (3 + cos(sqrt(32)*t)).*cos(t);
-% yt = sin(sqrt(32) * t);
-% zt = (3 + cos(sqrt(32)*t)).*sin(t);
-% plot3(xt,yt,zt,'m')
-% axis equal
-% xlabel('x(t)')
-% ylabel('y(t)')
-% zlabel('z(t)')
+t = 0:pi/500:40*pi;
+xt = (3 + cos(sqrt(32)*t)).*cos(t);
+yt = sin(sqrt(32) * t);
+zt = (3 + cos(sqrt(32)*t)).*sin(t);
+plot3(xt,yt,zt,'r')
+axis equal
+xlabel('x(t)')
+ylabel('y(t)')
+zlabel('z(t)')
+
+
